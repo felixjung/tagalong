@@ -1,0 +1,125 @@
+// Load variables and mixins
+@import 'variables';
+@import 'mixins';
+
+body {
+  background-color: $body-background-color;
+  font-family: $font-stack;
+  font-size: $base-font-size;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+
+  @include tablet {
+    padding-top: 10px;
+  }
+
+  @include desktop {
+    padding-top: 10px;
+  }
+}
+
+.tweet {
+  background: $tweet-background-color;
+  border-bottom: 1px solid $tweet-separator-color;
+  display: table;
+  padding: .1em;
+  width: 100vw;
+
+  @include tablet {
+    border-bottom: 0;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $tablet-width;
+    width: 80vw;
+  }
+
+  @include desktop {
+    border-bottom: 0;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: .9 * $desktop-width;
+    width: 80vw;
+  }
+
+  .profile-image-wrapper {
+    display: table-cell;
+    max-width: 65px;
+    padding: null .5em;
+    vertical-align: middle;
+    width: 20%;
+
+    @include tablet {
+      width: 65px;
+    }
+
+    @include desktop {
+      width: 65px;
+    }
+
+    img {
+      border: 3px solid $profile-image-border-color;
+      border-radius: 50%;
+      box-shadow: 0 0 3px #999;
+      display: block;
+      height: auto;
+      overflow: hidden;
+      vertical-align: middle;
+      width: 100%;
+    }
+  }
+
+  .tweet-content {
+    display: table-cell;
+    overflow: hidden;
+    padding: 5px 10px;
+    vertical-align: middle;
+    width: auto;
+
+    .user-name {
+      font-size: $h5-font-size;
+      font-weight: bold;
+
+      @include tablet {
+        font-size: $font-scaler * $h5-font-size;
+      }
+
+      @include desktop {
+        font-size: $font-scaler * $h5-font-size;
+      }
+    }
+
+    .screen-name {
+      font-size: $h6-font-size;
+
+      a,
+      a:visited,
+      a:active,
+      a:hover {
+        color: $tweet-screen-name-color;
+        text-decoration: none;
+      }
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .tweet-text {
+      line-height: 1.5 * $base-font-size;
+
+      a,
+      a:visited,
+      a:active {
+        color: $tweet-text-link-color;
+        text-decoration: none;
+      }
+
+      a:hover {
+        background-color: $tweet-text-link-color;
+        color: $tweet-background-color;
+      }
+    }
+  }
+}

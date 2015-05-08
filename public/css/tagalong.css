@@ -1,0 +1,91 @@
+body {
+  background-color: #1fb189;
+  font-family: "Helvetica Neue", Roboto, Arial, sans-serif;
+  font-size: 0.9em;
+  -webkit-font-smoothing: antialiased;
+  margin: 0; }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+      padding-top: 10px; } }
+  @media only screen and (min-width: 1025px) {
+    body {
+      padding-top: 10px; } }
+
+.tweet {
+  background: #f6f7f8;
+  border-bottom: 1px solid #999;
+  display: table;
+  padding: .1em;
+  width: 100vw; }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .tweet {
+      border-bottom: 0;
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 768px;
+      width: 80vw; } }
+  @media only screen and (min-width: 1025px) {
+    .tweet {
+      border-bottom: 0;
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 922.5px;
+      width: 80vw; } }
+  .tweet .profile-image-wrapper {
+    display: table-cell;
+    max-width: 65px;
+    padding: 0.5em;
+    vertical-align: middle;
+    width: 20%; }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      .tweet .profile-image-wrapper {
+        width: 65px; } }
+    @media only screen and (min-width: 1025px) {
+      .tweet .profile-image-wrapper {
+        width: 65px; } }
+    .tweet .profile-image-wrapper img {
+      border: 3px solid #fff;
+      border-radius: 50%;
+      box-shadow: 0 0 3px #999;
+      display: block;
+      height: auto;
+      overflow: hidden;
+      vertical-align: middle;
+      width: 100%; }
+  .tweet .tweet-content {
+    display: table-cell;
+    overflow: hidden;
+    padding: 5px 10px;
+    vertical-align: middle;
+    width: auto; }
+    .tweet .tweet-content .user-name {
+      font-size: 1.125em;
+      font-weight: bold; }
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        .tweet .tweet-content .user-name {
+          font-size: 1.35em; } }
+      @media only screen and (min-width: 1025px) {
+        .tweet .tweet-content .user-name {
+          font-size: 1.35em; } }
+    .tweet .tweet-content .screen-name {
+      font-size: 0.9em; }
+      .tweet .tweet-content .screen-name a,
+      .tweet .tweet-content .screen-name a:visited,
+      .tweet .tweet-content .screen-name a:active,
+      .tweet .tweet-content .screen-name a:hover {
+        color: #656667;
+        text-decoration: none; }
+    .tweet .tweet-content p {
+      margin: 0; }
+    .tweet .tweet-content .tweet-text {
+      line-height: 1.35em; }
+      .tweet .tweet-content .tweet-text a,
+      .tweet .tweet-content .tweet-text a:visited,
+      .tweet .tweet-content .tweet-text a:active {
+        color: #ea474e;
+        text-decoration: none; }
+      .tweet .tweet-content .tweet-text a:hover {
+        background-color: #ea474e;
+        color: #f6f7f8; }

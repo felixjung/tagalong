@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en" ng-app="tagalong">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tagalong</title>
+  <meta name="description" content="Tag along with SumUp on Twitter.">
+  <meta name="author" content="Felix Jung">
+  <link rel="stylesheet" href="css/tagalong.css">
+</head>
+<body>
+<tweet-list></tweet-list>
+<!-- Load Angular and sanitize-->
+<script src="js/vendor/angular/angular.min.js"></script>
+<script src="js/vendor/angular-sanitize/angular-sanitize.min.js"></script>
+<!-- Load app and modules -->
+<script src="js/app.js"></script>
+<script src="js/tweets-controller.js"></script>
+<script src="js/tweets-directive.js"></script>
+<script src="js/twitterhandle-filter.js"></script>
+</body>
+</html>

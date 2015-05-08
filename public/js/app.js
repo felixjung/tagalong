@@ -1,0 +1,1 @@
+angular.module('tagalong', ['ngSanitize']);
