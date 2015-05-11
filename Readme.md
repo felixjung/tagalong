@@ -4,13 +4,13 @@ Tagalong is a small web app that displays a series of tweets containing the hash
 
 Requirements
 ============
-You need to have [Node.js](https://nodejs.org) and [npm](https://github.com/npm/npm) installed to setup the server component. The client component does not require any setup. For development purposes you should have [gulp](http://gulpjs.com) and [sass](http://sass-lang.com) installed.
+You need to have [Node.js](https://nodejs.org) and [npm](https://github.com/npm/npm) installed to install server and gulp dependencies. The client component does not require any setup. For development purposes you should have [gulp](http://gulpjs.com) and [sass](http://sass-lang.com) installed.
 
 Usage
 =====
 1. Run ``npm install`` from the terminal to install Node.js dependencies.
 2. Rename ``config.example.js`` to ``config.js`` and enter your Twitter consumer key, consumer secret, access token, and access token secret.
-3. Either open ``public/index.html`` or launch gulp to have the webpage be served from browser-sync's static webserver and opened in Google Chrome.
+3. Launch gulp by calling ``gulp`` from terminal to launch the node server and have the webpage be served from browser-sync's static webserver and opened in Google Chrome.
 
 Todo
 ====
