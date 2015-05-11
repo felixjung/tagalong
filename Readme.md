@@ -10,7 +10,7 @@ Usage
 =====
 1. Run ``npm install`` from the terminal to install Node.js dependencies.
 2. Rename ``config.example.js`` to ``config.js`` and enter your Twitter consumer key, consumer secret, access token, and access token secret.
-3. Either open ``public/index.html`` or setup and launch gulp to have the webpage be served from browser-sync's static webserver and opened in Google Chrome.
+3. Either open ``public/index.html`` or launch gulp to have the webpage be served from browser-sync's static webserver and opened in Google Chrome.
 
 Todo
 ====
